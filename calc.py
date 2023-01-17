@@ -81,6 +81,7 @@ def click(value):
 
         elif value == 'x!':
             answer = math.factorial(ex)
+            return
 
         elif value == chr(247):  # 7/2=3.5
             entryField.insert(END, "/")
@@ -96,6 +97,8 @@ def click(value):
         entryField.delete(0, END)
         entryField.insert(0, answer)
 
+    except TypeError:
+        pass
     except SyntaxError:
         pass
 
