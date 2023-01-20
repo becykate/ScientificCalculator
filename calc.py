@@ -6,8 +6,8 @@ import pygame
 
 mixer.init()
 # setting up the click sound for the main buttons and calculator logo
-button_click = mixer.Sound('music2.mp3')
 equals_click = mixer.Sound('music1.mp3')
+button_click = mixer.Sound('music2.mp3')
 
 def quit(root):
     root.destroy()
